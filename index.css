@@ -1,1 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Sans Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+/*color background*/   
+     --clr-bg: #fff;
+     --clr-txt: #303030;
+     --clr-accent: #8f6fec;
+
+     --fs-h1: 3rem;
+     --fs-h2:2.25rem;
+     --fs-h3:1.25rem;
+     --fs-body:1rem;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+/*Styling */
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+img, i {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color:var(--clr-txt)
+}
+
+#puppy {
+    width:100px;
+    fill:white;
+    color: white !important;
+    background-color: black;
+}

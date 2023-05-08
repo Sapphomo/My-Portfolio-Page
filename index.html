@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<links>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> 
+    <!-- Normalize Across Browsers -->
+    <script src="https://kit.fontawesome.com/66a03698eb.js" crossorigin="anonymous"></script> 
+    <!-- Font Awesome Kit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet"> <!--Google Fonts-->
+</links>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-code" alt="logo image of a bracket" ></i>
+        </div>
 
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hambuger"> </span>
+        </button>
+
+        <nav class="navbar">
+            <ul class="navlist">
+                <li id="nav1"><a class="navLink" href="#home"> Home</a></li>
+
+                <li id="nav2"><a class="navLink" href="#services"> My Services </a></li>
+
+                <li id="nav3"><a class="navLink" href="#meee">About Me </a></li>
+
+                <li id="nav4"><a class="navLink" href="#work"> My Work</a></li>
+
+                <li id="nav5"><a class="navLink" href="#contact"> Contact Me </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<!--INTRO-->
+    <section clas="home" id="home">
+        <h1 class="homeTitleIntro">
+            Hello! I am <strong>Jules Miller</strong>
+        </h1>
+        <p class="homeSectionSub">Full-Stack Dev.</p>
+         <img src="/imgs/dog.svg" alt="" class="homeSectionImg" id="puppy">
+    </section>
+
+<!--SERVICES-->
+    <section class="ServicesSect" id="services">
+        <h1 class="servicesTitle">What I DO</h1>
+        <div class="servicesBoxes">
+            <div class="ServiceBox" id="Sbox1">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="ServiceBox" id="Sbox2">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="ServiceBox" id="Sbox3">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <a href="#work" class="btn">See My Work</a>
+    </section>
+
+<!--Aboot Me-->
+    <section class="About Me" id="meee">
+        <h2 class="MeTitle">About Me</h2>
+            <p class="MeSub">Short Description</p>
+        <div class="meBody">
+            <p></p>
+            <p></p>
+        </div>
+    </section>
+
+
+<!--Work-->
+    <section class="myWork" id="work">
+        <h2 class="workTitle">My Work</h2>
+        <p>Short Description</p>
+
+        <div class="portfolio">
+
+            <a class="porfolioItem1" id="portfolioLink"></a>
+
+            <a class="porfolioItem2" id="portfolioLink"></a>
+
+            <a class="porfolioItem3" id="portfolioLink"></a>
+
+            <a class="porfolioItem4" id="portfolioLink"></a>
+        </div>
+    </section>
+<!--Footer-->
+    <section class="footer" id="contact">
+        <footer>
+            <a class="footEmail" id="FootLink">Email</a>
+
+            <ul class="social link">
+                <li><a href=""></a>Test</li>
+                <li><a href=""></a>Test</li>
+                <li><a href=""></a>test</li>
+                <li><a href=""></a>Test</li>
+            </ul>
+        </footer>
+
+    </section>
+</body>
+</html>
