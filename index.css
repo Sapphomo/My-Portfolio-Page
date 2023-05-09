@@ -15,6 +15,7 @@
      --clr-light: #fff;
      --clr-dark: #303030;
      --clr-accent: #8f6fec;
+     --clr-bg:#8e6fec8e;
 
      --fs-h1: 3rem;
      --fs-h2:2.25rem;
@@ -68,10 +69,29 @@
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
+    .ServicesSect{
+        width:949px;
+        margin: 0 auto;
+    }
+    .ServicesSect, .servicesBoxes, .servicesTitle, .btn {
+        margin: auto auto auto auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:600px) { 
+    nav > ul {
+        padding-right: 50px;
+    }
+
 }
 
 
-/*Styling */
+/*----------------------------Styling ------------------------------*/
+
+
 
 body {
     background: var(--clr-light);
@@ -121,10 +141,6 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-.title {
-    
-}
-
 .subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -153,17 +169,40 @@ h3 {
     font-size: 1.1em;
 }
 
+.home {
+    background-color: var(--clr-bg);
+    border-radius: 25px 25px 0 0;
+}
+
 section {
     padding: 5em 2em;
-    border: 1px solid black;
 }
 
 .giflogo {
     width: 30rem;
     margin-left: 1vw;
+    max-height: 35vh;
+    max-width: 35vw;
+    margin:auto;
 }
 
-/*intro section*/
+
+/*----------------------------------------------------------------NAVIGATION*/
+
+nav ul{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   max-width: 75rem;
+   margin: auto;
+}
+
+.nav-toggle {
+    margin:none;
+    padding: none;
+}
+
+/*----------------------intro section---------------------------------*/
 
 .homeSectionSub {
     text-align: right;
@@ -171,6 +210,40 @@ section {
     padding-right:10% ;
 }
 
+/*---------------Services ----------------------------------------------------------------*/
+
+.ServicesSect {
+    color:wheat;
+    background-color:var(--clr-dark);
+    background-image: url(../My-Portfolio-Page/pexels-designecologist-1779487.jpg); /*Photo by Designecologist: https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/*/
+    background-size:cover;
+    text-shadow: 0 1px 5px var(--clr-accent), 
+                 1px 0 3px var(--clr-accent);
+    align-items: center;
+    margin: auto;
+    padding: 2em 5em;
+    background-repeat: no-repeat;
+}
+.ServiceBox p{
+   background-color: rgba(33,33,33, .5); 
+   text-shadow:0 1px 2px var(--clr-accent), 
+                1px 0 2px var(--clr-accent), 
+                0 -1px 2px var(--clr-accent), 
+                -1px 0 2px var(--clr-accent) ;
+   line-height: 2rem;
+   word-spacing: 3px;
+   letter-spacing: .5px ;
+}
 
 
+/*----------------------ABoot Me--------------------------------*/
 
+.MeTitle {
+    margin: auto;
+    text-align: center;
+}
+
+.meSub { 
+    margin: auto;
+    text-align: center;
+}
