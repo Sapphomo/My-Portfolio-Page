@@ -12,22 +12,61 @@
     --fw-bold: 900;
 
 /*color background*/   
-     --clr-bg: #fff;
-     --clr-txt: #303030;
+     --clr-light: #fff;
+     --clr-dark: #303030;
      --clr-accent: #8f6fec;
 
      --fs-h1: 3rem;
      --fs-h2:2.25rem;
      --fs-h3:1.25rem;
      --fs-body:1rem;
+
 }
 
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 4.5;
+        --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
+    }
+}
+
+@media (max-width:600px) {
+    .giflogo {
+        max-width: 20rem;
+     }
+
+}
+
+@media (min-width: 600px) {
+    .home {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    #puppy {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+        max-width: 20rem;
+    }
+    
+    .homeSectionSub {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
     }
 }
 
@@ -43,9 +82,12 @@ body {
     line-height: 1.6;
 }
 
+strong {
+    font-weight: var(--fw-bold);
+}
+
 img, i {
     display: block;
-    max-width: 100%;
 }
 
 ul {
@@ -57,8 +99,78 @@ a {
 }
 
 #puppy {
-    width:100px;
-    fill:white;
-    color: white !important;
-    background-color: black;
+    max-width: 28rem;
 }
+
+h1, 
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.title {
+    
+}
+
+.subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+    color: var(--clr-txt);
+}
+
+.homeSectionSub , .meSub {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+
+.title {
+    margin-bottom: .25em;
+}
+
+.homeTitleIntro {
+    font-weight: var(--fw-reg);
+}
+
+.homeTitleIntro strong {
+    display: block;
+    font-size: 1.1em;
+}
+
+section {
+    padding: 5em 2em;
+    border: 1px solid black;
+}
+
+.giflogo {
+    width: 30rem;
+    margin-left: 1vw;
+}
+
+/*intro section*/
+
+.homeSectionSub {
+    text-align: right;
+    letter-spacing: 5px;
+    padding-right:10% ;
+}
+
+
+
+
