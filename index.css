@@ -12,7 +12,7 @@
     --fw-bold: 900;
 
 /*color background*/   
-     --clr-light: #fff;
+     --clr-light: #ffffff;
      --clr-dark: #303030;
      --clr-accent: #8f6fec;
      --clr-bg:#8e6fec8e;
@@ -24,6 +24,7 @@
 
 }
 
+
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -34,6 +35,10 @@
 }
 
 @media (max-width:600px) {
+    * {
+     max-width:600px
+    }
+
     .giflogo {
         max-width: 20rem;
      }
@@ -91,6 +96,9 @@
 
 /*----------------------------Styling ------------------------------*/
 
+#puppy {
+    overflow: hidden;
+}
 
 
 body {
@@ -112,10 +120,13 @@ img, i {
 
 ul {
     list-style: none;
+    font-weight: var(--fw-bold);
+    
 }
 
 a {
-    color:var(--clr-txt)
+    color:var(--clr-txt);
+    text-decoration: none;
 }
 
 #puppy {
@@ -172,6 +183,7 @@ h3 {
 .home {
     background-color: var(--clr-bg);
     border-radius: 25px 25px 0 0;
+    max-width: 949px;
 }
 
 section {
@@ -210,6 +222,10 @@ nav ul{
     padding-right:10% ;
 }
 
+.home {
+    margin: auto;
+}
+
 /*---------------Services ----------------------------------------------------------------*/
 
 .ServicesSect {
@@ -223,6 +239,7 @@ nav ul{
     margin: auto;
     padding: 2em 5em;
     background-repeat: no-repeat;
+    width:
 }
 .ServiceBox p{
    background-color: rgba(33,33,33, .5); 
@@ -235,6 +252,9 @@ nav ul{
    letter-spacing: .5px ;
 }
 
+.web-span {
+    display: block;
+}
 
 /*----------------------ABoot Me--------------------------------*/
 
@@ -246,4 +266,10 @@ nav ul{
 .meSub { 
     margin: auto;
     text-align: center;
+}
+
+.About-Me {
+    max-width: 1000px;
+    margin: auto;
+    width: auto;
 }
