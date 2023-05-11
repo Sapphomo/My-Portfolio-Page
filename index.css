@@ -25,6 +25,7 @@
 }
 
 
+
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
@@ -59,7 +60,7 @@
     
     #puppy {
         grid-area: img;
-        min-width: 250px;
+        max-width: 250px;
         position: relative;
         z-index: 2;
         max-width: 20rem;
@@ -97,7 +98,8 @@
 /*----------------------------Styling ------------------------------*/
 
 #puppy {
-    overflow: hidden;
+    overflow: hidden !important;
+    max-width: 300px !important;
 }
 
 
