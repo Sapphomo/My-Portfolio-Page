@@ -14,8 +14,9 @@
 /*color background*/   
      --clr-light: #ffffff;
      --clr-dark: #303030;
-     --clr-accent: #8f6fec;
-     --clr-bg:#8e6fec8e;
+     --clr-accent: #5e4a9b;
+     /*#8f6fec*/
+     --clr-bg:#8e6fec4f;
 
      --fs-h1: 3rem;
      --fs-h2:2.25rem;
@@ -23,8 +24,18 @@
      --fs-body:1rem;
 
 }
+/*-------------------------------Fix Widths----------------------*/
+@media (min-width:799px) {
+    .home, #services, .About-Me, .myWork {
+        max-width: 750px;
+    }
+}
 
-
+@media (min-width:600px) {
+    .home, #services, .About-Me, .myWork {
+        max-width: 654px;
+    }
+}
 
 @media (min-width: 800px) {
     :root {
@@ -32,6 +43,9 @@
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
+    }
+    .home, #services, .About-Me, .myWork {
+        min-width: 949px;
     }
 }
 
@@ -95,7 +109,7 @@
 }
 
 
-/*----------------------------Styling ------------------------------*/
+/*--------------------------------------Styling ---------------------------------------*/
 
 #puppy {
     overflow: hidden !important;
@@ -201,7 +215,7 @@ section {
 }
 
 
-/*----------------------------------------------------------------NAVIGATION*/
+/*----------------------------------------------------------------NAVIGATION-------------*/
 
 nav ul{
    display: flex;
@@ -216,7 +230,7 @@ nav ul{
     padding: none;
 }
 
-/*----------------------intro section---------------------------------*/
+/*----------------------------------------intro section---------------------------------*/
 
 .homeSectionSub {
     text-align: right;
@@ -231,7 +245,7 @@ nav ul{
 /*---------------Services ----------------------------------------------------------------*/
 
 .ServicesSect {
-    color:wheat;
+    color:rgb(241, 228, 239);
     background-color:var(--clr-dark);
     background-image: url(../My-Portfolio-Page/pexels-designecologist-1779487.jpg); /*Photo by Designecologist: https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/*/
     background-size:cover;
@@ -241,10 +255,9 @@ nav ul{
     margin: auto;
     padding: 2em 5em;
     background-repeat: no-repeat;
-    width:
 }
 .ServiceBox p{
-   background-color: rgba(33,33,33, .5); 
+   background-color: rgba(87, 66, 117, 0.59); 
    text-shadow:0 1px 2px var(--clr-accent), 
                 1px 0 2px var(--clr-accent), 
                 0 -1px 2px var(--clr-accent), 
@@ -252,13 +265,22 @@ nav ul{
    line-height: 2rem;
    word-spacing: 3px;
    letter-spacing: .5px ;
+
+}
+
+.ServiceBox h3{
+    font-weight: var(--fw-bold);
+}
+
+#services a {
+    font-weight: var(--fw-bold);
 }
 
 .web-span {
     display: block;
 }
 
-/*----------------------ABoot Me--------------------------------*/
+/*--------------------------------------ABoot Me--------------------------------*/
 
 .MeTitle {
     margin: auto;
@@ -275,3 +297,6 @@ nav ul{
     margin: auto;
     width: auto;
 }
+
+
+/*--------------------------------Foooter --------------------------------*/
