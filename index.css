@@ -14,7 +14,7 @@
 /*color background*/   
      --clr-light: #ffffff;
      --clr-dark: #303030;
-     --clr-accent: #5e4a9b;
+     --clr-accent: #69579d;
      /*#8f6fec*/
      --clr-bg:#8e6fec4f;
 
@@ -47,6 +47,7 @@
     .home, #services, .About-Me, .myWork {
         min-width: 949px;
     }
+
 }
 
 @media (max-width:600px) {
@@ -99,13 +100,18 @@
         justify-content: center;
         text-align: center;
     }
-}
 
 @media (max-width:600px) { 
     nav > ul {
         padding-right: 50px;
     }
 
+}
+
+@media (max-width:800px) {
+    .servicesBoxes {
+        flex-direction: column;
+    }
 }
 
 
@@ -246,8 +252,10 @@ nav ul{
 
 .ServicesSect {
     color:rgb(241, 228, 239);
-    background-color:var(--clr-dark);
-    background-image: url(../My-Portfolio-Page/pexels-designecologist-1779487.jpg); /*Photo by Designecologist: https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/*/
+    background-color:var(--clr-accent);
+    background-image: url(../My-Portfolio-Page/pexels-designecologist-1779487.jpg); 
+    /*Photo by Designecologist: 
+    https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/*/
     background-size:cover;
     text-shadow: 0 1px 5px var(--clr-accent), 
                  1px 0 3px var(--clr-accent);
@@ -255,6 +263,48 @@ nav ul{
     margin: auto;
     padding: 2em 5em;
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+.servicesTitle {
+    color:#ad97ef;
+    text-shadow:0 1px 2px var(--clr-accent), 
+                1px 0 2px var(--clr-accent), 
+                0 -1px 4px var(--clr-accent), 
+                -1px 0 4px var(--clr-accent) ;
+}
+
+.web-span {
+    border:2px solid;
+    border-bottom-color: var(--clr-accent);
+    border-top-color:transparent;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    padding: none;
+    width: 12em;
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: -15px;
+}
+
+.servicesBoxes {
+    display: flex;
+    gap:10px;
+    width:100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#Sbox1 {
+    margin-left: -;
+}
+
+.servicerow p{
+    font-weight: bold;
+}
+
+.serviceSpan {
+    display: block;
 }
 .ServiceBox p{
    background-color: rgba(87, 66, 117, 0.59); 
@@ -263,9 +313,9 @@ nav ul{
                 0 -1px 2px var(--clr-accent), 
                 -1px 0 2px var(--clr-accent) ;
    line-height: 2rem;
-   word-spacing: 3px;
+   word-spacing: 1px;
    letter-spacing: .5px ;
-
+   width: 300px;
 }
 
 .ServiceBox h3{
@@ -280,6 +330,104 @@ nav ul{
     display: block;
 }
 
+button {
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   }
+   
+   button:hover {
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
+   }
+   
+   button span {
+    position: absolute;
+   }
+   
+   button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+   }
+   
+   button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+   button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+   }
+   
+   button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+   button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+   }
+   
+   button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+   button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+   }
+   
+   button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+   button:active {
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+   }
+   
+   button:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   
+
 /*--------------------------------------ABoot Me--------------------------------*/
 
 .MeTitle {
@@ -290,6 +438,8 @@ nav ul{
 .meSub { 
     margin: auto;
     text-align: center;
+    background-color: var(--clr-accent);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .About-Me {
@@ -298,5 +448,48 @@ nav ul{
     width: auto;
 }
 
+.meBody {
+    font-weight: var(--fw-bold);
+    line-height: 3rem;
+}
+
+.italic {
+    font-style:italic;
+}
+
+/*---------------------My Work------------------------*/
+.myWork {
+    margin: auto;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+}
 
 /*--------------------------------Foooter --------------------------------*/
+footer {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#portfolioLink {
+    background-color: #303030;
+    color: #fff;
+    text-align: center;
+    width: 10em;
+    height: 10em;
+    margin-bottom: -4em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+    gap:40px;
+    margin-bottom: -30px;
+}
