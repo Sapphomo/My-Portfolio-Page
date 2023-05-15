@@ -51,12 +51,12 @@
 }
 
 @media (max-width:600px) {
-     {
+    * {
      max-width:600px
     }
 
     .giflogo {
-        max-width: 20rem;
+        max-width: 45vw !important;
      }
 
 }
@@ -111,6 +111,16 @@
 
 
 
+}
+
+@media (max-width:550px) {
+    * {
+        max-width: 530px !important;
+    }
+
+    .About-Me {
+        max-width: 483px !important;
+    }
 }
 /*--------------------------------------Styling ---------------------------------------*/
 
@@ -210,7 +220,6 @@ section {
 }
 
 .giflogo {
-    width: 30rem;
     margin-left: 1vw;
     max-height: 35vh;
     max-width: 35vw;
@@ -246,7 +255,7 @@ nav ul{
 }
 
 /*---------------Services -------------------------------------------------------------------------------------------------------
-------------------------------------------Make text fit into a computer, laptop, and phone icon------------*/
+------------------------------------------Make text fitinto a computer, laptop, and phone icon------------*/
 
 
 .ServicesSect {
@@ -450,6 +459,7 @@ button {
     border: 2px solid black;
     border-radius: 0 0 25px 25px;
     padding-bottom: 2em;
+    background-color: var(--clr-bg);
 }
 
 .MeTitle {
@@ -490,15 +500,22 @@ button {
     line-height: 3rem;
     width: 80%;
     max-width: 749px;
+    min-width: 28em;
 }
 
 .italic {
     font-style:italic;
 }
 
+.meBody > p {
+    background-color:var(--clr-bg);
+    border-radius: 10px;
+ 
+}
+
 @media (max-width:900px) {
     .About-Me {
-        max-width: 500px;
+        max-width: 900px;
         display: grid;
         grid-template-areas: 
         "title"
@@ -521,15 +538,19 @@ button {
 
     .MeTitle {
         grid-area: title;
+        text-align: center;
     }
 
     .meSub {
         grid-area: subtitle;
-        text-align: center;
-        padding: auto !important;
-        padding-right: -10em ;
-        width: 80%;
+        width: 20em;
+        text-align: center !important;
+        margin: auto !important;
+        max-height: 4em;
+        padding-right: 10px !important;
+        align-items: center;
     }
+
 }
 
 /*---------------------My Work------------------------*/
@@ -540,7 +561,8 @@ button {
 
 .portfolio {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap:1em;
 }
 
 /*--------------------------------Foooter --------------------------------*/
@@ -548,7 +570,7 @@ footer {
     display: flex;
     margin: auto;
     justify-content: space-between;
-    width: 80%;
+    width: auto;
 }
 
 #portfolioLink {
@@ -562,9 +584,9 @@ footer {
 
 .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     margin: auto;
-    gap:40px;
+    gap:50px;
     margin-bottom: -30px;
 }
