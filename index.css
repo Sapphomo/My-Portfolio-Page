@@ -106,15 +106,12 @@
         padding-right: 50px;
     }
 
-}
 
-@media (max-width:800px) {
-    .servicesBoxes {
-        flex-direction: column;
-    }
 }
 
 
+
+}
 /*--------------------------------------Styling ---------------------------------------*/
 
 #puppy {
@@ -295,6 +292,13 @@ nav ul{
     align-items: flex-start;
 }
 
+@media (max-width:800px) {
+    .servicesBoxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 #Sbox1 {
     margin-left: -;
 }
@@ -430,31 +434,100 @@ button {
 
 /*--------------------------------------ABoot Me--------------------------------*/
 
-.MeTitle {
+.About-Me {
+    max-width: 749px;
     margin: auto;
-    text-align: center;
+    width: ;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: 
+    "title img"
+    "subtitle img"
+    "text img";
+    width: 749px;
+    border: 2px solid black;
+    border-radius: 0 0 25px 25px;
+    padding-bottom: 2em;
+}
+
+.MeTitle {
+    grid-area: title;
+    text-align: left;
+    width: 50%;
+    max-width: 749px;
+}
+
+.mePhoto {
+    height: 20em;
+    position: relative;
+    grid-area: img;
+    z-index: 2;
+    margin-left: -5em ;
+    box-shadow: 4px 5px 5px #303030, 2px 5px 8px #303030;
+    border-radius: 10px;
 }
 
 .meSub { 
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     text-align: center;
-    background-color: var(--clr-accent);
     font-family: 'Courier New', Courier, monospace;
-}
-
-.About-Me {
-    max-width: 1000px;
-    margin: auto;
-    width: auto;
+    text-align: left;
+    width: calc(80% + 8.6em);   
+    position: relative;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding-right: calc(100px + 4em) !important;
+    padding: .2em;
+    margin-left: -1em;
+    padding-left: 1em;
 }
 
 .meBody {
     font-weight: var(--fw-bold);
     line-height: 3rem;
+    width: 80%;
+    max-width: 749px;
 }
 
 .italic {
     font-style:italic;
+}
+
+@media (max-width:900px) {
+    .About-Me {
+        max-width: 500px;
+        display: grid;
+        grid-template-areas: 
+        "title"
+        "subtitle"
+        "img"
+        "text";
+        margin: auto !important;
+    }
+    .meBody, .mePhoto, .meSub, .MeTitle {
+        margin: auto !important;
+        padding: auto !important;
+    }
+
+    .mePhoto {
+        grid-area: img;
+    }
+    .meBody {
+        grid-area: text;
+    }
+
+    .MeTitle {
+        grid-area: title;
+    }
+
+    .meSub {
+        grid-area: subtitle;
+        text-align: center;
+        padding: auto !important;
+        padding-right: -10em ;
+        width: 80%;
+    }
 }
 
 /*---------------------My Work------------------------*/
