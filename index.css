@@ -250,7 +250,7 @@ nav ul{
 .ServicesSect {
     color:rgb(241, 228, 239);
     background-color:var(--clr-accent);
-    background-image: url(../My-Portfolio-Page/pexels-designecologist-1779487.jpg); 
+    background-image: url(imgs/pexels-designecologist-1779487.jpg); 
     /*Photo by Designecologist: 
     https://www.pexels.com/photo/silver-imac-displaying-collage-photos-1779487/*/
     background-size:cover;
