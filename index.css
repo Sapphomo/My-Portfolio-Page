@@ -114,12 +114,34 @@
 }
 
 @media (max-width:550px) {
-    * {
+        .home, #services, .About-Me, .myWork {
+            min-width: 550px;
+        }
+    
+    .About-Me {
         max-width: 530px !important;
     }
+}
+@media (min-width: 700px)  {
+    .home, #services, .About-Me, .myWork {
+        min-width: 700px !important;
+    }
+}
 
-    .About-Me {
-        max-width: 483px !important;
+@media (min-width: 600px)  {
+    .home, #services, .About-Me, .myWork {
+        min-width: 600px !important;
+    }
+}
+@media (min-width: 500px)  {
+    .home, #services, .About-Me, .myWork {
+        min-width: 500px !important;
+    }
+}
+
+@media (min-width: 400px)  {
+    .home, #services, .About-Me, .myWork {
+        min-width: 400px;
     }
 }
 /*--------------------------------------Styling ---------------------------------------*/
