@@ -609,7 +609,8 @@ button {
 
 }
 
-/*---------------------My Work------------------------*/
+/*---------------------My Work---------------
+--------Watch portfolio Scrimba transformation ----------*/
 .myWork {
     margin: auto;
     text-align: center;
@@ -621,7 +622,7 @@ button {
     gap:1em;
 }
 
-/*--------------------------------Foooter --------------------------------*/
+/*--------------------------------Foooter footer scrimba watch --------------------------------*/
 footer {
     display: flex;
     margin: auto;
