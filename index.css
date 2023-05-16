@@ -113,35 +113,54 @@
 
 }
 
+@media (max-width:800px) {
+    .About-Me {
+        max-width: 654px !important;
+    }
+}
+
 @media (max-width:550px) {
-        .home, #services, .About-Me, .myWork {
-            min-width: 550px;
-        }
-    
+    .home, #services, .About-Me, .myWork {
+       max-width: 550px;
+    }
+
     .About-Me {
         max-width: 530px !important;
     }
 }
-@media (min-width: 700px)  {
-    .home, #services, .About-Me, .myWork {
-        min-width: 700px !important;
+
+@media (max-width: 700px)  {
+    .About-Me {
+        min-width: auto !important;
     }
 }
 
-@media (min-width: 600px)  {
-    .home, #services, .About-Me, .myWork {
-        min-width: 600px !important;
-    }
-}
-@media (min-width: 500px)  {
-    .home, #services, .About-Me, .myWork {
-        min-width: 500px !important;
+@media (max-width: 600px)  {
+    .About-Me {
+        width:auto !important;
+        width:100vw;
     }
 }
 
-@media (min-width: 400px)  {
+
+@media (max-width:498px){
     .home, #services, .About-Me, .myWork {
-        min-width: 400px;
+        width:100vw
+}
+.meBody {
+    max-width: 100rem;
+}
+}
+/*-
+@media (max-width: 499px)  {
+    .About-Me{
+        min-width: 101vw !important;
+    }
+}
+
+@media (max-width: 400px)  {
+    .About-Me {
+        min-width: 101vw !important;
     }
 }
 /*--------------------------------------Styling ---------------------------------------*/
@@ -482,6 +501,8 @@ button {
     border-radius: 0 0 25px 25px;
     padding-bottom: 2em;
     background-color: var(--clr-bg);
+    row-gap: none;
+    column-gap: none;
 }
 
 .MeTitle {
@@ -503,7 +524,7 @@ button {
 
 .meSub { 
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 1em;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
@@ -522,7 +543,7 @@ button {
     line-height: 3rem;
     width: 80%;
     max-width: 749px;
-    min-width: 28em;
+    min-width: ;
 }
 
 .italic {
@@ -532,7 +553,17 @@ button {
 .meBody > p {
     background-color:var(--clr-bg);
     border-radius: 10px;
- 
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+}
+
+@media (max-width:550){
+    .mePhoto{
+        margin-top: 20em;
+    }
+    .meBody, .meBody > p {
+        width: 80em;
+    }
 }
 
 @media (max-width:900px) {
@@ -540,15 +571,17 @@ button {
         max-width: 900px;
         display: grid;
         grid-template-areas: 
-        "title"
-        "subtitle"
-        "img"
-        "text";
-        margin: auto !important;
+        "title title"
+        "subtitle subtitle"
+        "img img"
+        "text text";
+        row-gap: 4em;
+        align-items: center;
+        justify-content: center;
     }
     .meBody, .mePhoto, .meSub, .MeTitle {
-        margin: auto !important;
-        padding: auto !important;
+        margin: auto ;
+        padding: auto ;
     }
 
     .mePhoto {
@@ -565,12 +598,13 @@ button {
 
     .meSub {
         grid-area: subtitle;
-        width: 20em;
+        width: 80%;
         text-align: center !important;
         margin: auto !important;
-        max-height: 4em;
+        max-height: 6.5em;
         padding-right: 10px !important;
         align-items: center;
+        padding-left: 10px !important;
     }
 
 }
