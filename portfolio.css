@@ -27,13 +27,13 @@
 /*-------------------------------Fix Widths----------------------*/
 @media (min-width:799px) {
     .home, #services, .About-Me, .myWork {
-        max-width: 750px;
+        max-width: px;
     }
 }
 
 @media (min-width:600px) {
     .home, #services, .About-Me, .myWork {
-        max-width: 654px;
+        max-width: px;
     }
 }
 
@@ -45,14 +45,14 @@
         --fs-body: 1.125rem;
     }
     .home, #services, .About-Me, .myWork {
-        min-width: 949px;
+        min-width: px;
     }
 
 }
 
 @media (max-width:600px) {
     * {
-     max-width:600px
+     max-width:px
     }
 
 }
@@ -234,11 +234,6 @@ h3 {
     font-size: 1.1em;
 }
 
-.home {
-    background-color: var(--clr-bg);
-    border-radius: 25px 25px 0 0;
-    max-width: 949px;
-}
 
 section {
     padding: 5em 2em;
@@ -263,29 +258,67 @@ html {
 .home {
     margin: auto;
     max-height: 25rem;
+    width: 85%;
+    margin-bottom: -6px;
+    background-color: var(--clr-bg);
+    border-radius: 25px 25px 0 0;
 }
+
 /*----------------------------------------Port Items---------------------------------*/
 .portfolio {
-    width: 80%;
+    width: 85%;
     align-items: center;
     justify-content: center;
     align-self: center;
+    margin: auto;
+    padding: 0;
+}
+
+.item1,.item2 {
+
 }
 
 .items {
     display: flex;
-    gap: 10px;
+    gap: 3em;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: var(--clr-accent);
+    margin: auto !important;
+    padding: 2em;
+    border-radius: 0 0 25px 25px;
+    
 }
 
 .item {
-    border: 1px solid black;
-    width: 60px;
-    height: 60px;
+    width: 25em;
+    height: 25em;
     margin: auto;
     padding: 10px;
+    overflow: hidden;
 }
+
+/*----------------------------------------Port Items section---------------------------------*/
+
+
+.portimg {
+    transition: 
+        transform 750ms cubic-bezier(.5 , 0 , .5 , 1),
+        opacity 250ms linear;
+}
+
+.portimg:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+.item1img {
+    overflow: hidden ;
+    height: 100%;
+    margin: auto;
+    margin-left: -50%;
+}
+
 
 /*----------------------------------------FOOter section---------------------------------*/
 footer {
