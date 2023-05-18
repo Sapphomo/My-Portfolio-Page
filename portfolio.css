@@ -244,8 +244,33 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
+.home {
+    animation: 40000ms ease-in-out infinite color-change;
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: #927bd8;
+    }
+    15% {
+      background-color: var(--clr-accent);
+    }
+    30% {
+      background-color: var(--clr-bg);
+    }
+    45% {
+      background-color:  #927bd8;
+    }
+    60% {
+      background-color: var(--clr-bg);
+    }
+    75% {
+      background-color: var(--clr-accent);
+    }
+    100% {
+      background-color: #927bd8;
+    }
+  }
 /*----------------------------------------intro section---------------------------------*/
 
 .homeSectionSub {
@@ -273,6 +298,35 @@ html {
     margin: auto;
     padding: 0;
 }
+.PortItemTitle, .PortItemSub, .seemore {
+    color:rgba(245, 245, 220, 0.783);
+    text-align: center;
+}
+
+.PortItemTitle {
+    text-shadow: 2.2px 1px 1.6px #160c33
+}
+
+.PortItemSub {
+    font-weight:bold;
+    font-size:16px;
+    text-shadow: 2.2px 1px 1.6px #160c33
+}
+
+.seemore {
+    overflow: hidden;
+    z-index: -100;
+    background-color:#605486;
+    width: 9em;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.seemore:hover {
+    color: #927bd8;
+}
 
 .item1,.item2 {
 
@@ -287,7 +341,7 @@ html {
     margin: auto !important;
     padding: 2em;
     border-radius: 0 0 25px 25px;
-    
+    background-color:var(--clr-accent);
 }
 
 .item {
@@ -296,6 +350,11 @@ html {
     margin: auto;
     padding: 10px;
     overflow: hidden;
+    border-radius: 60px;
+    background-color: #69579d;
+    border:5px #000000;
+    border-style: double;
+    z-index: 20;
 }
 
 /*----------------------------------------Port Items section---------------------------------*/
@@ -309,7 +368,8 @@ html {
 
 .portimg:hover {
     transform: scale(1.2);
-    opacity: .75;
+    opacity: 100;
+    filter: contrast(65%);
 }
 
 .item1img {
@@ -323,6 +383,7 @@ html {
     overflow: hidden ;
     margin: auto;
     height: 100%;
+    margin-left: -2em;
 }
 
 
