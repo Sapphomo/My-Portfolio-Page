@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Sans Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+/*color background*/   
+     --clr-light: #ffffff;
+     --clr-dark: #303030;
+     --clr-accent: #69579d;
+     /*#8f6fec*/
+     --clr-bg:#8e6fec4f;
+
+     --fs-h1: 3rem;
+     --fs-h2:2.25rem;
+     --fs-h3:1.25rem;
+     --fs-body:1rem;
+}
+/*--------------------------------------Styling ---------------------------------------*/
+
+#puppy {
+    overflow: hidden !important;
+    max-width: 300px !important;
+    opacity: 0;
+}
+
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+img, i {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    font-weight: var(--fw-bold);
+    
+}
+
+a {
+    color:var(--clr-txt);
+    text-decoration: none;
+}
+
+#puppy {
+    max-width: 28rem;
+}
+
+h1, 
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+    color: var(--clr-txt);
+}
+
+.homeSectionSub , .meSub {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+
+.title {
+    margin-bottom: .25em;
+}
+
+.homeTitleIntro {
+    font-weight: var(--fw-reg);
+    color: var(--clr-dark);
+   text-shadow: 4px 2px 1px #927bd8;
+}
+
+.homeTitleIntro strong {
+    display: block;
+    font-size: 1.1em;
+}
+
+
+section {
+    padding: 5em 2em;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1/10 9/10;
+    grid-template-rows: 1000px 100px;
+    max-width: 100%;
+}
+
+/*----------------------------------------intro section---------------------------------*/
+.home {
+    grid-column:1/2 ;
+    grid-row:0/1 ;
+    height: 1360px;
+    width:400px;
+    margin-left:60px;
+    padding-left:60px;
+}
+
+.portfolio {
+    grid-column:2/3 ;
+    grid-row:0/1 ;
+    width: 900px;
+    padding: 0;
+}
+
+.homeSectionSub {
+    text-align: right;
+    letter-spacing: 5px;
+    padding-right:10% ;
+    text-shadow: 1px 2px 1px #927bd8;
+}
+
+.home {
+    background-color: var(--clr-bg);
+    border-radius: 25px 0 0 25px;
+}
+
+/*----------------------------------------Port Items---------------------------------*/
+.PortItemTitle, .PortItemSub, .seemore {
+    color:rgba(245, 245, 220, 0.783);
+    text-align: center;
+}
+
+.PortItemTitle {
+    text-shadow: 2.2px 1px 1.6px #160c33
+}
+
+.PortItemSub {
+    font-weight:bold;
+    font-size:16px;
+    text-shadow: 2.2px 1px 1.6px #160c33
+}
+
+.seemore {
+    overflow: hidden;
+    z-index: -100;
+    background-color:#605486;
+    width: 9em;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.seemore:hover {
+    color: #927bd8;
+}
+
+.item1,.item2 {
+
+}
+
+.items {
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--clr-accent);
+    padding: 2em;
+    border-radius: 0 25px 25px 0;
+    background-color:var(--clr-accent);
+}
+
+.item {
+    width: 25em;
+    height: 25em;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 60px;
+    background-color: #69579d;
+    border:5px #000000;
+    border-style: double;
+    z-index: 20;
+}
+
+/*----------------------------------------FOOter section---------------------------------*/
+footer {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#portfolioLink {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    width: 10em;
+    height: 10em;
+    margin-bottom: -4em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: auto;
+    gap:50px;
+    margin-bottom: -30px;
+}
