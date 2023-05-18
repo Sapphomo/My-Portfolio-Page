@@ -319,6 +319,12 @@ html {
     margin-left: -50%;
 }
 
+.item2img {
+    overflow: hidden ;
+    margin: auto;
+    height: 100%;
+}
+
 
 /*----------------------------------------FOOter section---------------------------------*/
 footer {
