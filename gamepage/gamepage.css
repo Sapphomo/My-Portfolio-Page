@@ -35,10 +35,10 @@
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
-    margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    overflow: scroll;
 }
 
 strong {
@@ -52,7 +52,6 @@ img, i {
 ul {
     list-style: none;
     font-weight: var(--fw-bold);
-    
 }
 
 a {
@@ -92,154 +91,111 @@ h3 {
 .homeSectionSub , .meSub {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
-    margin-bottom: 1em;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
     font-weight:bold;
 }
 
-.title {
-    margin-bottom: .25em;
-}
-
 .homeTitleIntro {
     font-weight: var(--fw-reg);
     color: var(--clr-dark);
-   text-shadow: 4px 2px 1px #927bd8;
+    text-shadow: 4px 2px 1px #927bd8;   
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: sticky;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .homeTitleIntro strong {
-    display: block;
-    font-size: 1.1em;
+    display: inline;
+    font-size: 1em;
 }
 
-
-section {
-    padding: 5em 2em;
+* {max-width: 100%;
+min-height: max-content;
 }
-
 
 html {
     scroll-behavior: smooth;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1/10 9/10;
-    grid-template-rows: 1000px 100px;
-    max-width: 100%;
+    display: inline-grid;
+    grid-template-columns: 0 min-content min-content 0;
+    grid-template-rows: max-content 5%;
+    width: 100%;;
+    margin: auto;
 }
 
 /*----------------------------------------intro section---------------------------------*/
+.footer {
+    grid-column:1/5;
+    grid-row:2/3;
+    width: 90%;
+    margin: auto;
+}
+
 .home {
-    grid-column:1/2 ;
-    grid-row:0/1 ;
-    height: 1360px;
-    width:400px;
-    margin-left:60px;
-    padding-left:60px;
+    grid-column:2/3 ;
+    grid-row:1/3;
+    height:auto;
+    width:100%;
+    background-color: var(--clr-bg);
+    border-radius: 50px 0 0 50px;
+    min-height: min-content;
 }
 
 .portfolio {
-    grid-column:2/3 ;
-    grid-row:0/1 ;
-    width: 900px;
-    padding: 0;
-}
-
-.homeSectionSub {
-    text-align: right;
-    letter-spacing: 5px;
-    padding-right:10% ;
-    text-shadow: 1px 2px 1px #927bd8;
-}
-
-.home {
-    background-color: var(--clr-bg);
-    border-radius: 25px 0 0 25px;
-}
-
-/*----------------------------------------Port Items---------------------------------*/
-.PortItemTitle, .PortItemSub, .seemore {
-    color:rgba(245, 245, 220, 0.783);
-    text-align: center;
+    grid-column:3/4 ;
+    grid-row:1;
+    width:90%;
+    height: min-content;
+    min-height: min-content;
 }
 
 .PortItemTitle {
-    text-shadow: 2.2px 1px 1.6px #160c33
-}
-
-.PortItemSub {
-    font-weight:bold;
-    font-size:16px;
-    text-shadow: 2.2px 1px 1.6px #160c33
-}
-
-.seemore {
-    overflow: hidden;
-    z-index: -100;
-    background-color:#605486;
-    width: 9em;
-    margin: auto;
-    padding: auto;
-    margin-bottom: 1em;
-    border-radius: 4px;
-}
-
-.seemore:hover {
-    color: #927bd8;
-}
-
-.item1,.item2 {
-
-}
-
-.items {
-    display: flex;
-    gap: 3em;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--clr-accent);
-    padding: 2em;
-    border-radius: 0 25px 25px 0;
-    background-color:var(--clr-accent);
+text-align: center;
+font-size: 3em;
+max-width: 100%;
+word-wrap: break-word;
 }
 
 .item {
-    width: 25em;
-    height: 25em;
+    max-width: 80%;
     margin: auto;
-    padding: 10px;
-    overflow: hidden;
-    border-radius: 60px;
-    background-color: #69579d;
-    border:5px #000000;
-    border-style: double;
-    z-index: 20;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
+.items {
+    background-color: #927bd8;
+    border-radius: 0 50px 50px 0;
+    min-width: 80vw;
+    min-height: min-content;
+    height: max-content;
+}
+
+.portimg {
+    max-width: 40%;
+    margin: auto;
+    padding: 1em;
+}
 /*----------------------------------------FOOter section---------------------------------*/
 footer {
     display: flex;
     margin: auto;
     justify-content: space-between;
-    width: 100vw;
-}
-
-#portfolioLink {
-    background-color: #ffffff;
-    color: #fff;
-    text-align: center;
-    width: 10em;
-    height: 10em;
-    margin-bottom: -4em;
+    width: 80vw;
+    min-width: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .links {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
     margin: auto;
-    gap:50px;
-    margin-bottom: -30px;
+    justify-content: space-between;
+    gap:2em
 }
