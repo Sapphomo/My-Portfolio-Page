@@ -178,9 +178,10 @@ word-wrap: break-word;
 }
 
 .portimg {
-    max-width: 40%;
+    max-width: 40% !important;
     margin: auto;
     padding: 1em;
+    max-height: 40% !important;
 }
 /*----------------------------------------FOOter section---------------------------------*/
 footer {
