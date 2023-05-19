@@ -178,10 +178,10 @@ word-wrap: break-word;
 }
 
 .portimg {
-    max-width: 40% !important;
+    max-width: 20em !important;
     margin: auto;
     padding: 1em;
-    max-height: 40% !important;
+    max-height: 20em !important;
 }
 /*----------------------------------------FOOter section---------------------------------*/
 footer {
