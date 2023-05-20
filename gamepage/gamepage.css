@@ -225,14 +225,26 @@ html {
 }
 
 .portimg {
-    max-height: 10em !important;
+    max-height: 15em !important;
     margin: auto;
     padding: 1em;
     align-items: center;
     padding-right: 0;
     margin-right: 0;
-
+    border-radius: 30px;
+    transition: 
+        transform 750ms cubic-bezier(.5 , 0 , .5 , 1),
+        opacity 250ms linear, 
 }
+
+.portimg:hover {
+    transform: scale(1.4);
+    opacity: 100;
+    filter: contrast(65%);
+}
+
+
+
 /*----------------------------------------FOOter section---------------------------------*/
 footer {
     display: flex;

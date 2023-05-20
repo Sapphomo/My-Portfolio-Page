@@ -387,6 +387,13 @@ html {
 }
 
 
+.item3img {
+    overflow: hidden ;
+    height: 120%;
+    margin: auto;
+    margin-left: -3em;
+}
+
 .hvr-float-shadow {
     display: inline-block;
     vertical-align: middle;

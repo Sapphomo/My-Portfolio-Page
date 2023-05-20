@@ -1,0 +1,50 @@
+*{
+    color: white;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+}
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    fill: white;
+}
+
+#scissorsicon {
+    fill: white;
+    color: white;
+}
+
+#winlose {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#playerchoice {
+    display: flex;
+    justify-content: center;
+}
+
+.computerspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#notifspace {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}

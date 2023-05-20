@@ -1,0 +1,38 @@
+let rockEl = document.getElementById(rockbtn)
+let paperEl = document.getElementById(paperbtn)
+let scissorsEl = document.getElementById(scissorsbtn)
+let lizardEl = document.getElementById(lizardbtn)
+let spockEl = document.getElementById(spockbtn)
+
+//get buttons clickable
+//assign win/lose value to each
+//create math random between 0 and 4
+//have computerchoose
+//display win/loss number
+//display win/loss message
+//reset game
+
+let choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"] 
+
+function hands() {
+    let rando = Math.floor( Math.random() * 5)
+    return choices[rando]
+}
+
+
+
+
+function rock() {
+    //run computerchoose
+    //if computer chooses [0] then draw
+    //if computer chooses [2 || 3] then win
+    //if computer chooses [1 || 4] then lose
+    let computerchoose = hands()
+    if (computerchoose === "Rock") {
+        console.log("It's a draw")
+    } else if (computerchoose === "Scissors" || computerchoose === "Lizard") {
+        console.log("You win")
+    } else (computerchoose === "Paper" || computerchoose === "Spock") {
+        console.log("You lose") 
+    }
+}

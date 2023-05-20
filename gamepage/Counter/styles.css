@@ -1,0 +1,53 @@
+.background {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+body {
+    background-image: url(Image-of-Binary-Code-1.jpg);
+    color: white;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+button {
+    flex: auto;
+    margin: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#increment-btn {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+#decrease-btn {
+    background-color: red;
+    color: white;
+}
+
+#save-el {
+    background-color:rgba(255, 255, 255, 0.151);
+    font-weight: bold;
+}
+
+#count-el {
+    font-size: 70px;
+    color: rgb(15, 175, 12);
+    text-shadow: 1px 1px 3px  white;
+}
+
+h1 {
+    text-shadow: 2px 2px 3px  rgba(5, 159, 5, 0.575);
+}

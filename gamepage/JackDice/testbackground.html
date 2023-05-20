@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testback.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="BJContain Right">
+    <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <button onclick="finish()">FINISH</button>
+        <p id="player-el"></p>
+    </div>
+
+
+    <div class="dicecontain Left">
+        
+        <div class="dice">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+        </div>
+
+        <button class="roll">
+            Roll Dice
+        </button>
+
+    </div>
+    
+    <script src="testback.js"></script>
+</html>
