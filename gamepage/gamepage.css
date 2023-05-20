@@ -38,6 +38,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    max-width: 100vw;
 }
 
 strong {
@@ -105,6 +106,10 @@ h3 {
     top: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding: 1em;
+    padding-top: 0;
 }
 
 .homeTitleIntro strong {
@@ -158,7 +163,7 @@ html {
    /* grid-column:2/3 ;
     grid-row:1/2; */
     height:auto;
-    width:100%;
+    width:min-content;
     background-color: var(--clr-bg);
     border-radius: 50px 0 0 50px;
     min-height: min-content;
@@ -173,17 +178,43 @@ html {
 }
 
 .PortItemTitle {
-text-align: center;
-font-size: 3em;
-max-width: 100%;
+    text-align: left;
+    font-size: 2.8em;
+    max-width: 80%;
+    text-shadow:2.8px 5px #69579d;
+    padding: auto;
 }
 
+.PortItemSub {
+    font-size: 1.4em;
+    max-width: 90%;
+}
+
+.seemore {
+    font-weight: bold;
+}
 .item {
     max-width: 80%;
     margin: auto;
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+.item > a{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .item > a{
+        display: flex;
+        flex-direction: column;
+    }
+    .portimg {
+        margin: auto !important;
+    }
+}
+
 
 .items {
     background-color: #927bd8;
@@ -194,9 +225,13 @@ max-width: 100%;
 }
 
 .portimg {
-    max-width: 20em !important;
+    max-width: 10em !important;
     margin: auto;
     padding: 1em;
+    align-items: center;
+    padding-right: 0;
+    margin-right: 0;
+
 }
 /*----------------------------------------FOOter section---------------------------------*/
 footer {
