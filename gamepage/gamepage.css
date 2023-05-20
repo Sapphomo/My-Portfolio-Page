@@ -225,7 +225,7 @@ html {
 }
 
 .portimg {
-    max-width: 10em !important;
+    max-height: 10em !important;
     margin: auto;
     padding: 1em;
     align-items: center;
