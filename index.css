@@ -708,6 +708,46 @@ nav ul{
     gap:1em;
 }
 
+.workSubtitle {
+    padding-bottom: 2em;
+}
+
+.workimg {
+    max-width: 30em;
+    overflow: hidden ;
+    margin: auto;
+    transition: 
+        transform 750ms cubic-bezier(.5 , 0 , .5 , 1),
+        opacity 250ms linear;
+}
+
+.workimg:hover {
+    transform: scale(1.2);
+    opacity: 100;
+    filter: contrast(65%);
+}
+
+.img1 {
+    width: 120%;
+    margin: auto;
+}
+
+.img2 {
+    width: 280%;
+}
+
+#portfolioLink {
+    width: 15em;
+    overflow: hidden;
+    background-color: #303030;
+    color: #fff;
+    text-align: center;
+    width: 10em;
+    height: 10em;
+    margin-bottom: -4em;
+    border-radius: 20px;
+    border: 4px ridge var(--clr-accent);
+}
 /*--------------------------------Foooter footer scrimba watch --------------------------------*/
 footer {
     display: flex;
@@ -716,14 +756,7 @@ footer {
     width: auto;
 }
 
-#portfolioLink {
-    background-color: #303030;
-    color: #fff;
-    text-align: center;
-    width: 10em;
-    height: 10em;
-    margin-bottom: -4em;
-}
+
 
 .links {
     display: flex;
