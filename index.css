@@ -708,6 +708,19 @@ nav ul{
     gap:1em;
 }
 
+@media (max-width:720) {
+    .portfolio {
+        flex-direction: row;
+    }
+    #portfolioLink, .workimg {
+        width: 10em !important;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+}
+
 .workSubtitle {
     padding-bottom: 2em;
 }
@@ -716,6 +729,7 @@ nav ul{
     max-width: 30em;
     overflow: hidden ;
     margin: auto;
+    min-height: 100%;
     transition: 
         transform 750ms cubic-bezier(.5 , 0 , .5 , 1),
         opacity 250ms linear;
@@ -748,11 +762,112 @@ nav ul{
     border-radius: 20px;
     border: 4px ridge var(--clr-accent);
 }
+
+.buttondiv {
+    margin-top: 6em;
+}
+
+.portbutt,
+.portbutt::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+.portbutt::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "FUll PORTFOLIO";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom:0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+.portbutt:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+
 /*--------------------------------Foooter footer scrimba watch --------------------------------*/
 footer {
     display: flex;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: auto;
 }
 
@@ -763,6 +878,14 @@ footer {
     justify-content: space-evenly;
     flex-direction: row;
     margin: auto;
-    gap:50px;
-    margin-bottom: -30px;
-}
+    margin-top: -4em;
+    align-items: ;
+    width: min-content;
+    gap:30%;
+    text-align: center;
+    margin-left: 39.5%;
+} 
+
+/*---.links > li > a, .links > li {
+   margin-left:-60%;
+ } */

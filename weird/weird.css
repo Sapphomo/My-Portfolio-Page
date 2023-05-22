@@ -1,0 +1,150 @@
+body {
+    background:grey;
+  }
+  
+  * {
+    font-family:sans-serif;
+    font-weight:bold;
+    text-shadow: white 0px 0px 1px;
+      -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2 {
+    display: flex;
+    letter-spacing: 8px;
+    align-items:center;
+  
+  }
+  
+  li {
+   margin-left:50px;
+   margin-right:50px;
+  }
+  
+  header {
+    font-size:min(max(1em, 1vw), 2.4em);
+    background-image:url(https://media.istockphoto.com/id/1135685505/vector/black-box-package-mock-up-set-vector-black-carton-cardboard-or-paper-package-boxes-isolated.jpg?s=612x612&w=is&k=20&c=9KNm7STNFDSIU-BNNbJEcCWsQ9bdYR_h-vDijhPJiWw=);
+    margin-top:80px;
+  
+  }
+  
+  #header-img{height:0px}
+  
+  nav{position:fixed;
+  top:0px;}
+  
+  #nav-bar, .container{
+    position:fixed;
+    background:#999999;
+    top:0px;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+  }
+  
+  li {
+    font-size:20px
+    font
+  }
+  
+  #textbox {
+      display: flex;
+      justify-content: center;
+  }
+  
+  #textbox, .header, .big-boy,, #nav-con, li, a, #nav-name {
+    background:transparent;
+  }
+  
+  #nav-name{
+    color:black;
+  }
+  
+  h2, h1 {
+    white-space:nowrap;
+  }
+  
+  .hover:hover, h1:hover,#uppies:hover {
+    color:rgb(190,0,0);
+    font-style:italic;
+    fill:red;
+  }
+  
+  #thing-box {
+    height:400px;
+  }
+  
+  #what-img {
+    display:inline-flex;
+    justify-content:space-between;
+    gap:20px;
+  }
+  
+  #cost-small {
+    font-size:8px;
+  }
+  
+  .body-info {
+    display:flex;
+    align-items:center;
+    text-align:center;
+    font-size:min(max(1.5em, 1vw), 4.4em);
+    }
+  
+  .explain {
+    background:#999999;
+    border:1px solid black;
+  }
+  
+  #uppies {
+    fill:black;
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  
+  #nav-name {
+    display:flex;
+    justify-content:space-evenly;
+    list-style:none;
+    gap:4px;
+    letter-spacing:2px;
+    font-size:min(max(1em, 1vw), 2.4em);
+  
+  }
+  
+  a {
+    text-decoration:none;
+    color:black;
+  }
+  
+  #up-text {
+    font-family:sans-serif;
+    color:rgb(180,0,0);
+    font-weight:bold;
+    display:float;
+    margin:40px;
+  }
+  
+  #up-contain {
+    position:absolute;
+    width:100px;
+    height:100px;
+  
+  }
+  
+  #uppies, #up-text{
+      position:relative;
+      width: 40px;
+      height: 0px;
+      margin: 12px;
+      float: float;
+      padding-left:505px;
+      bottom:165;
+  }
+  
+  
+  @media only screen and (max-width:10000px) {
+    font-size:50%;
+  }

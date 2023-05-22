@@ -394,6 +394,21 @@ html {
     margin-left: -3em;
 }
 
+.item4img {
+    margin-left:-1em
+}
+
+.item5img {
+    margin-left:-1em
+}
+
+.item6img {
+    height:105%;
+    padding-left:-2em;
+    margin-left: -2em
+    
+}
+
 .hvr-float-shadow {
     display: inline-block;
     vertical-align: middle;
