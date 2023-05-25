@@ -134,6 +134,12 @@ body {
   
   }
   
+  .body-info {
+    padding:.7em;
+    word-spacing: 3px;
+    line-height: 150%;
+  }
+
   #uppies, #up-text{
       position:relative;
       width: 40px;
@@ -145,6 +151,3 @@ body {
   }
   
   
-  @media only screen and (max-width:10000px) {
-    font-size:50%;
-  }
