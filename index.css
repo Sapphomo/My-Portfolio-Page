@@ -708,18 +708,31 @@ nav ul{
     gap:1em;
 }
 
-@media (max-width:720) {
+
+@media (max-width: 780px) {
     .portfolio {
         flex-direction: row;
+        flex-wrap: wrap;
     }
+
     #portfolioLink, .workimg {
-        width: 10em !important;
+        width: 12em !important;
+        height: 12em !important;
+        padding: auto !important;
+        margin: auto !important;
     }
 
     footer {
         justify-content: space-evenly;
     }
-}
+
+    .workimg {
+        min-height: 120% !important;
+        width: auto !important;
+    }
+
+  }
+
 
 .workSubtitle {
     padding-bottom: 2em;
