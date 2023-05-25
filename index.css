@@ -652,6 +652,11 @@ nav ul{
     }
 }
 
+ .meBody > p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
 @media (max-width:900px) {
     .About-Me {
         max-width: 900px;
@@ -676,6 +681,8 @@ nav ul{
     .meBody {
         grid-area: text;
     }
+
+   
 
     .MeTitle {
         grid-area: title;
@@ -708,6 +715,9 @@ nav ul{
     gap:1em;
 }
 
+.bottomportbutton, .portbutt {
+    cursor: pointer;
+}
 
 @media (max-width: 780px) {
     .portfolio {
